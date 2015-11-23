@@ -1,0 +1,47 @@
+.git-finder,
+.svn-finder {
+    background: #2C3539;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    bottom: 15px;
+    box-shadow: 0 0 20px #000;
+    color: #fff;
+    padding: 7px 10px;
+    position: fixed;
+    right: 20px;
+    z-index: 50;
+}
+
+.svn-finder {
+    bottom: 60px;
+}
+
+.git-finder-fade-in,
+.svn-finder-fade-in {
+    animation: fadein 2s;
+    opacity: 1;
+}
+
+.git-finder-fade-out,
+.svn-finder-fade-out {
+    animation: fadeout 2s;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
